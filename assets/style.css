@@ -39,7 +39,7 @@ p {
 
 h1 {
   color: var(--font-color-heading);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-bold);
 }
 
 p {
