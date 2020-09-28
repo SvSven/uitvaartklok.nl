@@ -72,6 +72,19 @@ main {
   }
 }
 
+.btn-group {
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-group {
+    grid-template-columns: 1fr;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 0.5em 1em;
@@ -80,21 +93,20 @@ main {
   color: var(--color-frostblue);
   transition: all 0.2s;
   border-radius: 4px;
-  margin-top: 1.5em;
 }
 
 .btn:focus {
   border: dashed 1px;
 }
 
+.btn:visited {
+  color: var(--color-frostblue);
+}
+
 .btn:hover {
   border: solid 1px;
   background: var(--color-frostblue);
   color: var(--color-white);
-}
-
-.btn:visited {
-  color: var(--color-frostblue);
 }
 
 footer {
