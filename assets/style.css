@@ -75,14 +75,10 @@ main {
 .btn-group {
   margin-top: 1.5em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
   grid-gap: 1em;
-}
-
-@media screen and (max-width: 600px) {
-  .btn-group {
-    grid-template-columns: 1fr;
-  }
+  justify-content: center;
 }
 
 .btn {
